@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Car</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+
+.card-list:has(li:hover) li:not(:hover) {
+  filter: blur(4px)
+}
+
+
+h1 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin: 0 0 2rem;  
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  transition: all 150ms ease-in-out;
+}
+
+li::before {
+  content: "";
+}
+
+img {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin-bottom: .6rem;
+}
+
+a {
+  background: none;
+}
+
+.paper {
+  padding: 1.5rem;
+}
+
+li a {
+  padding-inline-start: 1rem;
+}
+
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .social-login {
+            border-radius:49px;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 90%;
+        }
+        .login-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-btn {
+            border: none;
+            background-color: #eee;
+            color: #333;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .social-btn:hover {
+            background-color: #ddd;
+        }
+        .social-icon {
+            margin-right: 5px;
+        }
+
+        
+    </style>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./img/redbull-removebg-preview.png" alt="Logo" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">RACING <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SPORTS CARS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COLLECTIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EXPERIENCES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+</header>
+    
+</header>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2 class="login-title">Acesse sua conta</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Lembrar-me</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+            </form>
+
+            <div class="social-login">
+                <button class="social-btn">
+                    <i class="fab fa-facebook-f social-icon"></i> Facebook
+                </button>
+                <button class="social-btn">
+                    <i class="fab fa-google social-icon"></i> Google
+                </button>
+                <button class="social-btn">
+                    <i class="fab fa-twitter social-icon"></i> Twitter
+                </button>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="">Esqueceu sua senha?</a>
+            </div>
+            <div class="text-center mt-2">
+                Não tem uma conta? <a href="criarconta">Cadastre-se</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<footer>
+
+</footer>
+</html>
